@@ -2,10 +2,15 @@
     "name": "default-memory-dsl",
     "version": "1.0.0",
     "description": "",
+    "type": "module",
     "main": "index.js",
+    "bin": {
+        "dsl-eval": "./dist/cli.js"
+    },
     "scripts": {
         "build": "tsc",
-        "test": "jest"
+        "test": "jest",
+        "cli": "tsx src/cli.ts"
     },
     "keywords": [],
     "author": "",
@@ -14,6 +19,11 @@
         "@types/jest": "^30.0.0",
         "jest": "^30.0.5",
         "ts-jest": "^29.4.0",
-        "typescript": "^5.8.3"
+        "tsx": "^4.20.3",
+        "typescript": "^5.8.3",
+        "vitest": "^3.2.4"
+    },
+    "dependencies": {
+        "chevrotain": "^11.0.3"
     }
 }

@@ -20,7 +20,9 @@ Function:
 
 Language specification:
 - Non-Turing-complete
-- Interpreter should be written in TS
+- Interpreter will run in TS
+- Literals can be only numbers
+- All non-number values (from runOptions and input) evaluate to either 1 (truthy) or 0 (falsy)
 - Allowed operations:
     - Basic arithmetic operations: +, -, *, /, %
     - Min/max
@@ -28,7 +30,7 @@ Language specification:
     - object.property
     - default (||) - fallback for falsy values
     - ternary - truthy ? value : value
-    - variable assignment for readability, separated by ;. Last expression is returned.
+    - variable assignment with `let varName = value` for readability, separated by ;. Last expression is implicitly returned.
     - () for grouping precedence
 
 Testing:
@@ -37,7 +39,3 @@ Write many test cases
 Example functions:
 - "min(options.maxChargedResults || 99999, input.usernames.length) * 64"
 - "min(options.maxChargedResults, input.username.length * (input.resultsLimit || 1000) / input.onlyPostsNewerThan ? 20 : 1) * 64"
-
-Or do you think function syntax would be better than operators? e.g.
-- "min(default(options.maxChargedResults, 99999), length(input.usernames)) * 64"
-- "min(options.maxChargedResults, length(input.username) * default(input.resultsLimit, 1000) / ternary(input.onlyPostsNewerThan, 20, 1)) * 64"
