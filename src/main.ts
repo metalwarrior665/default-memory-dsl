@@ -1,5 +1,5 @@
 import { Actor } from "apify";
-import { setupAndStartServer } from "./src/server.js";
+import { setupAndStartServer } from "./server.js";
 
 await Actor.init();
 

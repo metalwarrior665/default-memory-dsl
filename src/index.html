@@ -96,19 +96,19 @@
   <h1>RAM DSL Evaluator</h1>
   <form id="dsl-form" autocomplete="off">
     <label for="expression">Expression</label>
-    <textarea id="expression" rows="2" required spellcheck="false">min(runOptions.maxItems || 100, input.urls.length) * 64</textarea>
+    <textarea id="expression" rows="2" required spellcheck="false">min(runOptions.maxItems || 100, input.usernames.length) * 64</textarea>
 
     <label for="input">Input (JSON)</label>
-    <textarea id="input" rows="4" required spellcheck="false">{"urls": ["a", "b"]}</textarea>
+    <textarea id="input" rows="4" required spellcheck="false">{"usernames": ["bill", "melinda"]}</textarea>
 
     <div class="row">
       <div>
         <label for="maxItems">runOptions.maxItems</label>
-        <input type="text" id="maxItems" value="1500" placeholder="e.g. 1500" />
+        <input type="text" id="maxItems" value="1500" />
       </div>
       <div>
         <label for="maxTotalChargedUsd">runOptions.maxTotalChargedUsd</label>
-        <input type="text" id="maxTotalChargedUsd" value="10" placeholder="e.g. 10" />
+        <input type="text" id="maxTotalChargedUsd" value="" />
       </div>
     </div>
 

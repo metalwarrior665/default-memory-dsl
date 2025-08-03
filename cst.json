@@ -219,13 +219,13 @@
                                                                                 "children": {
                                                                                   "Identifier": [
                                                                                     {
-                                                                                      "image": "input.urls.length",
+                                                                                      "image": "input.usernames.length",
                                                                                       "startOffset": 32,
-                                                                                      "endOffset": 48,
+                                                                                      "endOffset": 53,
                                                                                       "startLine": 1,
                                                                                       "endLine": 1,
                                                                                       "startColumn": 33,
-                                                                                      "endColumn": 49,
+                                                                                      "endColumn": 54,
                                                                                       "tokenTypeIdx": 4,
                                                                                       "tokenType": {
                                                                                         "name": "Identifier",
@@ -280,12 +280,12 @@
                                               "RParen": [
                                                 {
                                                   "image": ")",
-                                                  "startOffset": 49,
-                                                  "endOffset": 49,
+                                                  "startOffset": 54,
+                                                  "endOffset": 54,
                                                   "startLine": 1,
                                                   "endLine": 1,
-                                                  "startColumn": 50,
-                                                  "endColumn": 50,
+                                                  "startColumn": 55,
+                                                  "endColumn": 55,
                                                   "tokenTypeIdx": 9,
                                                   "tokenType": {
                                                     "name": "RParen",
@@ -308,13 +308,13 @@
                                       "children": {
                                         "NumberLiteral": [
                                           {
-                                            "image": "64",
-                                            "startOffset": 53,
-                                            "endOffset": 54,
+                                            "image": "63",
+                                            "startOffset": 58,
+                                            "endOffset": 59,
                                             "startLine": 1,
                                             "endLine": 1,
-                                            "startColumn": 54,
-                                            "endColumn": 55,
+                                            "startColumn": 59,
+                                            "endColumn": 60,
                                             "tokenTypeIdx": 3,
                                             "tokenType": {
                                               "name": "NumberLiteral",
@@ -333,12 +333,12 @@
                                   "Mult": [
                                     {
                                       "image": "*",
-                                      "startOffset": 51,
-                                      "endOffset": 51,
+                                      "startOffset": 56,
+                                      "endOffset": 56,
                                       "startLine": 1,
                                       "endLine": 1,
-                                      "startColumn": 52,
-                                      "endColumn": 52,
+                                      "startColumn": 57,
+                                      "endColumn": 57,
                                       "tokenTypeIdx": 12,
                                       "tokenType": {
                                         "name": "Mult",
@@ -351,6 +351,60 @@
                                       }
                                     }
                                   ]
+                                }
+                              },
+                              {
+                                "name": "mulExpr",
+                                "children": {
+                                  "primary": [
+                                    {
+                                      "name": "primary",
+                                      "children": {
+                                        "Identifier": [
+                                          {
+                                            "image": "process",
+                                            "startOffset": 63,
+                                            "endOffset": 69,
+                                            "startLine": 1,
+                                            "endLine": 1,
+                                            "startColumn": 64,
+                                            "endColumn": 70,
+                                            "tokenTypeIdx": 4,
+                                            "tokenType": {
+                                              "name": "Identifier",
+                                              "PATTERN": {},
+                                              "tokenTypeIdx": 4,
+                                              "CATEGORIES": [],
+                                              "categoryMatches": [],
+                                              "categoryMatchesMap": {},
+                                              "isParent": false
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ],
+                            "Plus": [
+                              {
+                                "image": "+",
+                                "startOffset": 61,
+                                "endOffset": 61,
+                                "startLine": 1,
+                                "endLine": 1,
+                                "startColumn": 62,
+                                "endColumn": 62,
+                                "tokenTypeIdx": 10,
+                                "tokenType": {
+                                  "name": "Plus",
+                                  "PATTERN": {},
+                                  "tokenTypeIdx": 10,
+                                  "CATEGORIES": [],
+                                  "categoryMatches": [],
+                                  "categoryMatchesMap": {},
+                                  "isParent": false
                                 }
                               }
                             ]
