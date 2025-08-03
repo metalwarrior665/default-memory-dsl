@@ -15,7 +15,7 @@ export const setupAndStartServer = () => {
 
     // Serve the HTML interface from root
     app.get('/', (_, res) => {
-        return res.sendFile(path.join(__dirname, 'index.html'));
+        return res.sendFile(path.join(__dirname, '../public/index.html'));
     });
 
     app.post('/evaluate', (req, res) => {
