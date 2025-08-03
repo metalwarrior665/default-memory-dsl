@@ -2,40 +2,28 @@
 
 A simple, non-Turing-complete domain-specific language (DSL) and interpreter in TypeScript for determining default RAM allocation for cloud-deployed programs based on input options.
 
-## Purpose
-This project allows developers to define a function (as a string) that determines the default RAM for their cloud program, based on the input object and run options. The function is evaluated by the cloud API when the program is run.
+## Allowed Operations
+- Basic arithmetic operations: `+`, `-`, `*`, `/`, `%`
+- `min` and `max` functions (work like `Math.min` and `Math.max`)
+- Accessing array length with `array.length`
+- Accessing object properties with `object.property`
+- Default value fallback using `||`
+- Ternary operator: `condition ? valueIfTrue : valueIfFalse`
+- Variable assignment using `let varName = value;` for readability, with statements separated by `;`
+- Parentheses `()` for grouping expressions and controlling precedence
 
-## Features
-- Non-Turing-complete DSL
-- Safe evaluation of user-defined expressions
-- Access to two global objects: `runOptions` and `input`
-- Supports basic arithmetic, min/max, array/object access, default (||), ternary, variable assignment, and grouping
-- Max function length: 1000 characters
+## Language Specification
+- Literals can only be numbers
+- Non-number values from `runOptions` and `input` evaluate to either `1` (truthy) or `0` (falsy)
+- The provided string must end with a single expression that evaluates to a number
+- The maximum length of the function string is 1000 characters
 
-## Example DSL Functions
-```
-min(options.maxChargedResults || 99999, input.usernames.length) * 64
-min(options.maxChargedResults, input.username.length * (input.resultsLimit || 1000) / input.onlyPostsNewerThan ? 20 : 1) * 64
-```
+## Global Objects
+- `runOptions`: An object with the following properties:
+    - `runOptions.maxItems` (integer)
+    - `runOptions.maxTotalChargedUsd` (integer)
+- `input`: An object that can have arbitrary properties, which can be nested
 
-## Getting Started
-1. Clone the repository
-2. Install dependencies:
-   ```sh
-   npm install
-   ```
-3. Build the project:
-   ```sh
-   npx tsc
-   ```
-4. Run tests:
-   ```sh
-   npm test
-   ```
-
-## Project Structure
-- `src/` - Source code for the DSL parser and interpreter
-- `test/` - Test cases for the DSL
-
-## License
-ISC 
+## Example Functions
+- `"min(options.maxItems || 99999, input.usernames.length) * 64"`
+- `"min(options.maxItems, input.username.length * (input.resultsLimit || 1000) / input.onlyPostsNewerThan ? 20 : 1) * 64"`

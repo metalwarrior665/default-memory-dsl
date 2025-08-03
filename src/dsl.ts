@@ -302,7 +302,7 @@ class RamInterpreter extends BaseVisitor implements ICstVisitor<any, number> {
     }
     
     if (ctx.Identifier && !ctx.functionCall) {
-      const fullPath = ctx.Identifier[0].image;
+      const fullPath = ctx.Identifier[0].image as string;
       const dotIndex = fullPath.indexOf('.');
       
       if (dotIndex === -1) {
@@ -324,7 +324,7 @@ class RamInterpreter extends BaseVisitor implements ICstVisitor<any, number> {
           const baseValue = this.variables.get(rootName)!;
           const restPath = fullPath.substring(dotIndex + 1);
           const parts = restPath.split('.');
-          let value = baseValue;
+          let value: any = baseValue;
           for (const part of parts) {
             if (value === null || value === undefined) {
               value = undefined;
@@ -398,7 +398,7 @@ class LRUCache<K, V> {
       this.cache.delete(key);
     } else if (this.cache.size >= this.capacity) {
       // Remove least recently used (first item)
-      const firstKey = this.cache.keys().next().value;
+      const firstKey = this.cache.keys().next().value as K;
       this.cache.delete(firstKey);
     }
     this.cache.set(key, value);
