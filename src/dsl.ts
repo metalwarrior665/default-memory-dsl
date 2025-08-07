@@ -437,12 +437,6 @@ export function evaluateRamExpression(source: string, context: any): number {
 
     // Cache the parsed CST
     cstCache.set(source, cst);
-
-    // Debug: write CST to file (only for cache misses to avoid excessive writes)
-    if (process.env.NODE_ENV !== 'production') {
-      const json = JSON.stringify(cst, null, 2);
-      writeFileSync('cst.json', json, 'utf8');
-    }
   } else {
     // Cache hit
     cacheHits++;

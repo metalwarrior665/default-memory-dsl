@@ -25,350 +25,15 @@
                                     {
                                       "name": "primary",
                                       "children": {
-                                        "functionCall": [
-                                          {
-                                            "name": "functionCall",
-                                            "children": {
-                                              "Identifier": [
-                                                {
-                                                  "image": "min",
-                                                  "startOffset": 0,
-                                                  "endOffset": 2,
-                                                  "startLine": 1,
-                                                  "endLine": 1,
-                                                  "startColumn": 1,
-                                                  "endColumn": 3,
-                                                  "tokenTypeIdx": 4,
-                                                  "tokenType": {
-                                                    "name": "Identifier",
-                                                    "PATTERN": {},
-                                                    "tokenTypeIdx": 4,
-                                                    "CATEGORIES": [],
-                                                    "categoryMatches": [],
-                                                    "categoryMatchesMap": {},
-                                                    "isParent": false
-                                                  }
-                                                }
-                                              ],
-                                              "LParen": [
-                                                {
-                                                  "image": "(",
-                                                  "startOffset": 3,
-                                                  "endOffset": 3,
-                                                  "startLine": 1,
-                                                  "endLine": 1,
-                                                  "startColumn": 4,
-                                                  "endColumn": 4,
-                                                  "tokenTypeIdx": 8,
-                                                  "tokenType": {
-                                                    "name": "LParen",
-                                                    "PATTERN": {},
-                                                    "tokenTypeIdx": 8,
-                                                    "CATEGORIES": [],
-                                                    "categoryMatches": [],
-                                                    "categoryMatchesMap": {},
-                                                    "isParent": false
-                                                  }
-                                                }
-                                              ],
-                                              "expression": [
-                                                {
-                                                  "name": "expression",
-                                                  "children": {
-                                                    "ternaryExpr": [
-                                                      {
-                                                        "name": "ternaryExpr",
-                                                        "children": {
-                                                          "orExpr": [
-                                                            {
-                                                              "name": "orExpr",
-                                                              "children": {
-                                                                "addExpr": [
-                                                                  {
-                                                                    "name": "addExpr",
-                                                                    "children": {
-                                                                      "mulExpr": [
-                                                                        {
-                                                                          "name": "mulExpr",
-                                                                          "children": {
-                                                                            "primary": [
-                                                                              {
-                                                                                "name": "primary",
-                                                                                "children": {
-                                                                                  "Identifier": [
-                                                                                    {
-                                                                                      "image": "runOptions.maxItems",
-                                                                                      "startOffset": 4,
-                                                                                      "endOffset": 22,
-                                                                                      "startLine": 1,
-                                                                                      "endLine": 1,
-                                                                                      "startColumn": 5,
-                                                                                      "endColumn": 23,
-                                                                                      "tokenTypeIdx": 4,
-                                                                                      "tokenType": {
-                                                                                        "name": "Identifier",
-                                                                                        "PATTERN": {},
-                                                                                        "tokenTypeIdx": 4,
-                                                                                        "CATEGORIES": [],
-                                                                                        "categoryMatches": [],
-                                                                                        "categoryMatchesMap": {},
-                                                                                        "isParent": false
-                                                                                      }
-                                                                                    }
-                                                                                  ]
-                                                                                }
-                                                                              }
-                                                                            ]
-                                                                          }
-                                                                        }
-                                                                      ]
-                                                                    }
-                                                                  },
-                                                                  {
-                                                                    "name": "addExpr",
-                                                                    "children": {
-                                                                      "mulExpr": [
-                                                                        {
-                                                                          "name": "mulExpr",
-                                                                          "children": {
-                                                                            "primary": [
-                                                                              {
-                                                                                "name": "primary",
-                                                                                "children": {
-                                                                                  "NumberLiteral": [
-                                                                                    {
-                                                                                      "image": "100",
-                                                                                      "startOffset": 27,
-                                                                                      "endOffset": 29,
-                                                                                      "startLine": 1,
-                                                                                      "endLine": 1,
-                                                                                      "startColumn": 28,
-                                                                                      "endColumn": 30,
-                                                                                      "tokenTypeIdx": 3,
-                                                                                      "tokenType": {
-                                                                                        "name": "NumberLiteral",
-                                                                                        "PATTERN": {},
-                                                                                        "tokenTypeIdx": 3,
-                                                                                        "CATEGORIES": [],
-                                                                                        "categoryMatches": [],
-                                                                                        "categoryMatchesMap": {},
-                                                                                        "isParent": false
-                                                                                      }
-                                                                                    }
-                                                                                  ]
-                                                                                }
-                                                                              }
-                                                                            ]
-                                                                          }
-                                                                        }
-                                                                      ]
-                                                                    }
-                                                                  }
-                                                                ],
-                                                                "Or": [
-                                                                  {
-                                                                    "image": "||",
-                                                                    "startOffset": 24,
-                                                                    "endOffset": 25,
-                                                                    "startLine": 1,
-                                                                    "endLine": 1,
-                                                                    "startColumn": 25,
-                                                                    "endColumn": 26,
-                                                                    "tokenTypeIdx": 15,
-                                                                    "tokenType": {
-                                                                      "name": "Or",
-                                                                      "PATTERN": {},
-                                                                      "tokenTypeIdx": 15,
-                                                                      "CATEGORIES": [],
-                                                                      "categoryMatches": [],
-                                                                      "categoryMatchesMap": {},
-                                                                      "isParent": false
-                                                                    }
-                                                                  }
-                                                                ]
-                                                              }
-                                                            }
-                                                          ]
-                                                        }
-                                                      }
-                                                    ]
-                                                  }
-                                                },
-                                                {
-                                                  "name": "expression",
-                                                  "children": {
-                                                    "ternaryExpr": [
-                                                      {
-                                                        "name": "ternaryExpr",
-                                                        "children": {
-                                                          "orExpr": [
-                                                            {
-                                                              "name": "orExpr",
-                                                              "children": {
-                                                                "addExpr": [
-                                                                  {
-                                                                    "name": "addExpr",
-                                                                    "children": {
-                                                                      "mulExpr": [
-                                                                        {
-                                                                          "name": "mulExpr",
-                                                                          "children": {
-                                                                            "primary": [
-                                                                              {
-                                                                                "name": "primary",
-                                                                                "children": {
-                                                                                  "Identifier": [
-                                                                                    {
-                                                                                      "image": "input.usernames.length",
-                                                                                      "startOffset": 32,
-                                                                                      "endOffset": 53,
-                                                                                      "startLine": 1,
-                                                                                      "endLine": 1,
-                                                                                      "startColumn": 33,
-                                                                                      "endColumn": 54,
-                                                                                      "tokenTypeIdx": 4,
-                                                                                      "tokenType": {
-                                                                                        "name": "Identifier",
-                                                                                        "PATTERN": {},
-                                                                                        "tokenTypeIdx": 4,
-                                                                                        "CATEGORIES": [],
-                                                                                        "categoryMatches": [],
-                                                                                        "categoryMatchesMap": {},
-                                                                                        "isParent": false
-                                                                                      }
-                                                                                    }
-                                                                                  ]
-                                                                                }
-                                                                              }
-                                                                            ]
-                                                                          }
-                                                                        }
-                                                                      ]
-                                                                    }
-                                                                  }
-                                                                ]
-                                                              }
-                                                            }
-                                                          ]
-                                                        }
-                                                      }
-                                                    ]
-                                                  }
-                                                }
-                                              ],
-                                              "Comma": [
-                                                {
-                                                  "image": ",",
-                                                  "startOffset": 30,
-                                                  "endOffset": 30,
-                                                  "startLine": 1,
-                                                  "endLine": 1,
-                                                  "startColumn": 31,
-                                                  "endColumn": 31,
-                                                  "tokenTypeIdx": 18,
-                                                  "tokenType": {
-                                                    "name": "Comma",
-                                                    "PATTERN": {},
-                                                    "tokenTypeIdx": 18,
-                                                    "CATEGORIES": [],
-                                                    "categoryMatches": [],
-                                                    "categoryMatchesMap": {},
-                                                    "isParent": false
-                                                  }
-                                                }
-                                              ],
-                                              "RParen": [
-                                                {
-                                                  "image": ")",
-                                                  "startOffset": 54,
-                                                  "endOffset": 54,
-                                                  "startLine": 1,
-                                                  "endLine": 1,
-                                                  "startColumn": 55,
-                                                  "endColumn": 55,
-                                                  "tokenTypeIdx": 9,
-                                                  "tokenType": {
-                                                    "name": "RParen",
-                                                    "PATTERN": {},
-                                                    "tokenTypeIdx": 9,
-                                                    "CATEGORIES": [],
-                                                    "categoryMatches": [],
-                                                    "categoryMatchesMap": {},
-                                                    "isParent": false
-                                                  }
-                                                }
-                                              ]
-                                            }
-                                          }
-                                        ]
-                                      }
-                                    },
-                                    {
-                                      "name": "primary",
-                                      "children": {
-                                        "NumberLiteral": [
-                                          {
-                                            "image": "63",
-                                            "startOffset": 58,
-                                            "endOffset": 59,
-                                            "startLine": 1,
-                                            "endLine": 1,
-                                            "startColumn": 59,
-                                            "endColumn": 60,
-                                            "tokenTypeIdx": 3,
-                                            "tokenType": {
-                                              "name": "NumberLiteral",
-                                              "PATTERN": {},
-                                              "tokenTypeIdx": 3,
-                                              "CATEGORIES": [],
-                                              "categoryMatches": [],
-                                              "categoryMatchesMap": {},
-                                              "isParent": false
-                                            }
-                                          }
-                                        ]
-                                      }
-                                    }
-                                  ],
-                                  "Mult": [
-                                    {
-                                      "image": "*",
-                                      "startOffset": 56,
-                                      "endOffset": 56,
-                                      "startLine": 1,
-                                      "endLine": 1,
-                                      "startColumn": 57,
-                                      "endColumn": 57,
-                                      "tokenTypeIdx": 12,
-                                      "tokenType": {
-                                        "name": "Mult",
-                                        "PATTERN": {},
-                                        "tokenTypeIdx": 12,
-                                        "CATEGORIES": [],
-                                        "categoryMatches": [],
-                                        "categoryMatchesMap": {},
-                                        "isParent": false
-                                      }
-                                    }
-                                  ]
-                                }
-                              },
-                              {
-                                "name": "mulExpr",
-                                "children": {
-                                  "primary": [
-                                    {
-                                      "name": "primary",
-                                      "children": {
                                         "Identifier": [
                                           {
-                                            "image": "process",
-                                            "startOffset": 63,
-                                            "endOffset": 69,
+                                            "image": "input.foo9",
+                                            "startOffset": 0,
+                                            "endOffset": 9,
                                             "startLine": 1,
                                             "endLine": 1,
-                                            "startColumn": 64,
-                                            "endColumn": 70,
+                                            "startColumn": 1,
+                                            "endColumn": 10,
                                             "tokenTypeIdx": 4,
                                             "tokenType": {
                                               "name": "Identifier",
@@ -386,28 +51,127 @@
                                   ]
                                 }
                               }
-                            ],
-                            "Plus": [
+                            ]
+                          }
+                        },
+                        {
+                          "name": "addExpr",
+                          "children": {
+                            "mulExpr": [
                               {
-                                "image": "+",
-                                "startOffset": 61,
-                                "endOffset": 61,
-                                "startLine": 1,
-                                "endLine": 1,
-                                "startColumn": 62,
-                                "endColumn": 62,
-                                "tokenTypeIdx": 10,
-                                "tokenType": {
-                                  "name": "Plus",
-                                  "PATTERN": {},
-                                  "tokenTypeIdx": 10,
-                                  "CATEGORIES": [],
-                                  "categoryMatches": [],
-                                  "categoryMatchesMap": {},
-                                  "isParent": false
+                                "name": "mulExpr",
+                                "children": {
+                                  "primary": [
+                                    {
+                                      "name": "primary",
+                                      "children": {
+                                        "Identifier": [
+                                          {
+                                            "image": "input.nested.value19",
+                                            "startOffset": 14,
+                                            "endOffset": 33,
+                                            "startLine": 1,
+                                            "endLine": 1,
+                                            "startColumn": 15,
+                                            "endColumn": 34,
+                                            "tokenTypeIdx": 4,
+                                            "tokenType": {
+                                              "name": "Identifier",
+                                              "PATTERN": {},
+                                              "tokenTypeIdx": 4,
+                                              "CATEGORIES": [],
+                                              "categoryMatches": [],
+                                              "categoryMatchesMap": {},
+                                              "isParent": false
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
                                 }
                               }
                             ]
+                          }
+                        },
+                        {
+                          "name": "addExpr",
+                          "children": {
+                            "mulExpr": [
+                              {
+                                "name": "mulExpr",
+                                "children": {
+                                  "primary": [
+                                    {
+                                      "name": "primary",
+                                      "children": {
+                                        "NumberLiteral": [
+                                          {
+                                            "image": "99",
+                                            "startOffset": 38,
+                                            "endOffset": 39,
+                                            "startLine": 1,
+                                            "endLine": 1,
+                                            "startColumn": 39,
+                                            "endColumn": 40,
+                                            "tokenTypeIdx": 3,
+                                            "tokenType": {
+                                              "name": "NumberLiteral",
+                                              "PATTERN": {},
+                                              "tokenTypeIdx": 3,
+                                              "CATEGORIES": [],
+                                              "categoryMatches": [],
+                                              "categoryMatchesMap": {},
+                                              "isParent": false
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "Or": [
+                        {
+                          "image": "||",
+                          "startOffset": 11,
+                          "endOffset": 12,
+                          "startLine": 1,
+                          "endLine": 1,
+                          "startColumn": 12,
+                          "endColumn": 13,
+                          "tokenTypeIdx": 15,
+                          "tokenType": {
+                            "name": "Or",
+                            "PATTERN": {},
+                            "tokenTypeIdx": 15,
+                            "CATEGORIES": [],
+                            "categoryMatches": [],
+                            "categoryMatchesMap": {},
+                            "isParent": false
+                          }
+                        },
+                        {
+                          "image": "||",
+                          "startOffset": 35,
+                          "endOffset": 36,
+                          "startLine": 1,
+                          "endLine": 1,
+                          "startColumn": 36,
+                          "endColumn": 37,
+                          "tokenTypeIdx": 15,
+                          "tokenType": {
+                            "name": "Or",
+                            "PATTERN": {},
+                            "tokenTypeIdx": 15,
+                            "CATEGORIES": [],
+                            "categoryMatches": [],
+                            "categoryMatchesMap": {},
+                            "isParent": false
                           }
                         }
                       ]
